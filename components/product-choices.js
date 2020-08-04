@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoints } from '../utilities/constants'
+import { breakpoints, products } from '../utilities/constants'
 
 export default function ProductChoices() {
   return (

@@ -11,3 +11,18 @@ export const breakpoints = {
   large: `(min-width: ${widths.large})`,
   xlarge: `(min-width: ${widths.xlarge})`,
 }
+
+export const products = [
+  {
+    id: 'Amber',
+    image: 'sofa-amber',
+  },
+  {
+    id: 'Charcoal',
+    image: 'sofa-charcoal',
+  },
+  {
+    id: 'Red',
+    image: 'sofa-red',
+  },
+]

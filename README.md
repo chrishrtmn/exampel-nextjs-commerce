@@ -34,6 +34,7 @@ I come from a Drupal front-end development background, with some Laravel and Vue
 
 ## To Do
 
-1. Bind state between products and images
-2. Configure react-progressive-images
-3. Add Framer Motion transitions
+1. Bind state between products and image thumbnails
+2. Configure and lazyload react-progressive-images
+3. Sticky image on mobile view
+4. Add Framer Motion transitions
