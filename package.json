@@ -1,15 +1,22 @@
 {
   "name": "example-nextjs-commerce",
   "version": "0.1.0",
-  "private": true,
+  "description": "Code challenge example using Next.js, styled-components, and Framer Motion",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
+    "framer-motion": "^2.3.0",
     "next": "9.5.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-progressive-image": "^0.6.0",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.11.1"
   }
 }

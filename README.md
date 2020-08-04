@@ -1,30 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Example Next.js Commerce
 
-## Getting Started
+## Live Site Preview
 
-First, run the development server:
+Visit [https://example-nextjs-commerce.vercel.app](https://example-nextjs-commerce.vercel.app) to see results
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Local Development Instructions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This requires you to have Node, NPM, and Git installed on your computer.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Download or `git clone` this repository
+2. `cd` to this directory
+3. Run `npm install` to install necessary dependencies
+4. Run `npm run dev` to see local dev server version at [localhost:3000](http://localhost:3000)
 
-## Learn More
+## Briefing Notes
 
-To learn more about Next.js, take a look at the following resources:
+I come from a Drupal front-end development background, with some Laravel and Vue.js experience. I choose the following languages and technologies for this challenge because the JavaScript ecosystem, specifically [JAMstack](https://jamstack.org), is something I have currently have an interest in.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Uses [Next.js](https://github.com/vercel/next.js) as a framework for React.js
+2. Styling CSS-in-JS components with [styled-components](https://github.com/styled-components/styled-components)
+3. Transitions and animations done with [Framer Motion](https://github.com/framer/motion)
+4. Progressive and responsive image loading with [react-progressive-image](https://github.com/FormidableLabs/react-progressive-image)
+5. Images:
+   - Exported JPG images as WebP format (file sizes shrunk up to ~40% using [Squoosh](https://squoosh.app))
+   - Compressed and set JPG format images as fallback for Safari browser
+   - Removed cruft code from SVG images (file sizes shrunk up to ~80% using [SVGOMG](https://jakearchibald.github.io/svgomg/))
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Site Performance Overview
 
-## Deploy on Vercel
+1. [CSS Stats](https://cssstats.com/stats?url=https%3A%2F%2Fexample-nextjs-commerce.vercel.app)
+2. [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fexample-nextjs-commerce.vercel.app)
+3. [Pingdom Tools](https://tools.pingdom.com/#5cec4379bec00000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## To Do
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Style header and nav
+2. Simple mobile nav setup
+3. Bind state between products and images
+4. Crop and re-export all images
+5. Configure react-progressive-images
+6. Add Framer Motion transitions
