@@ -29,7 +29,7 @@ I come from a Drupal front-end development background, with some Laravel and Vue
 ## Site Performance Overview
 
 1. [CSS Stats](https://cssstats.com/stats?url=https%3A%2F%2Fexample-nextjs-commerce.vercel.app)
-2. [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fexample-nextjs-commerce.vercel.app)
+2. [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fexample-nextjs-commerce.vercel.app&tab=desktop)
 3. [Pingdom Tools](https://tools.pingdom.com/#5cec4379bec00000)
 
 ## To Do

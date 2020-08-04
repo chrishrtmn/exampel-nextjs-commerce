@@ -51,10 +51,11 @@ const Title = styled.div`
 const Thumbnails = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
   grid-gap: 10px;
 
   @media ${breakpoints.large} {
-    grid-gap: 20px;
+    grid-gap: 15px;
   }
 
   div {
