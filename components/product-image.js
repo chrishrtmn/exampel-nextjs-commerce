@@ -11,6 +11,13 @@ export default function ProductImage() {
 }
 
 const Images = styled.div`
+  margin: 40px 0 0;
+
+  img {
+    max-width: none;
+    width: 100%;
+  }
+
   img[hidden] {
     display: none !important;
   }

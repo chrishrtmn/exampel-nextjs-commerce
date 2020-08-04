@@ -30,7 +30,7 @@ export default function ProductChoices() {
 }
 
 const Fragment = styled.div`
-  padding: 35px 0;
+  padding: 25px 0;
   border-top: 2px solid #fff;
 
   h4 {
@@ -68,6 +68,16 @@ const Thumbnails = styled.div`
 
     img {
       width: 100%;
+      padding: 30px 10px;
+      background: var(--color-background);
+
+      @media ${breakpoints.small} {
+        padding: 20px 10px;
+      }
+
+      @media ${breakpoints.medium} {
+        padding: 30px 10px;
+      }
     }
 
     span {

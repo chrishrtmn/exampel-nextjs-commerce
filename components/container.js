@@ -69,8 +69,11 @@ const Fragment = styled.div`
       }
 
       &:last-of-type {
-        padding: 0 20px 0 0;
         text-align: right;
+
+        @media ${breakpoints.small} {
+          padding: 0 20px 0 0;
+        }
       }
 
       img {

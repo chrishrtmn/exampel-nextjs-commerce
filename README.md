@@ -22,9 +22,9 @@ I come from a Drupal front-end development background, with some Laravel and Vue
 3. Transitions and animations done with [Framer Motion](https://github.com/framer/motion)
 4. Progressive and responsive image loading with [react-progressive-image](https://github.com/FormidableLabs/react-progressive-image)
 5. Images:
-   - Exported JPG images as WebP format (file sizes shrunk up to ~40% using [Squoosh](https://squoosh.app))
-   - Compressed and set JPG format images as fallback for Safari browser
-   - Removed cruft code from SVG images (file sizes shrunk up to ~80% using [SVGOMG](https://jakearchibald.github.io/svgomg/))
+   - Cropped and exported JPG images as WebP format (smaller image sizes, retains quality)
+   - Cropped and compressed JPG images as fallback for Safari, IE browsers
+   - Removed cruft code from SVG logo/icons
 
 ## Site Performance Overview
 
@@ -34,9 +34,6 @@ I come from a Drupal front-end development background, with some Laravel and Vue
 
 ## To Do
 
-1. Style header and nav
-2. Simple mobile nav setup
-3. Bind state between products and images
-4. Crop and re-export all images
-5. Configure react-progressive-images
-6. Add Framer Motion transitions
+1. Bind state between products and images
+2. Configure react-progressive-images
+3. Add Framer Motion transitions
