@@ -19,9 +19,8 @@ I come from a Drupal front-end development background, with some Laravel and Vue
 
 1. Uses [Next.js](https://github.com/vercel/next.js) as a framework for React.js
 2. Styling CSS-in-JS components with [styled-components](https://github.com/styled-components/styled-components)
-3. Transitions and animations done with [Framer Motion](https://github.com/framer/motion)
-4. Progressive and responsive image loading with [react-progressive-image](https://github.com/FormidableLabs/react-progressive-image)
-5. Images:
+FormidableLabs/react-progressive-image)
+3. Images:
    - Cropped and exported JPG images as WebP format (smaller image sizes, retains quality)
    - Cropped and compressed JPG images as fallback for Safari, IE browsers
    - Removed cruft code from SVG logo/icons
