@@ -19,11 +19,7 @@ I come from a Drupal front-end development background, with some Laravel and Vue
 
 1. Uses [Next.js](https://github.com/vercel/next.js) as a framework for React.js
 2. Styling CSS-in-JS components with [styled-components](https://github.com/styled-components/styled-components)
-FormidableLabs/react-progressive-image)
-3. Images:
-   - Cropped and exported JPG images as WebP format (smaller image sizes, retains quality)
-   - Cropped and compressed JPG images as fallback for Safari, IE browsers
-   - Removed cruft code from SVG logo/icons
+3. Cropped and compressed JPG images and removed cruft code from SVG logo/icons
 
 ## Site Performance Overview
 
