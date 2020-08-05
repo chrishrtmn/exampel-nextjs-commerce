@@ -1,13 +1,13 @@
 import ProductImage from './product-image'
 import ProductIcons from './product-icons'
 import ProductDetails from './product-details'
-import ProductChoices from './product-choices'
+import ProductSelection from './product-selection'
 import styled from 'styled-components'
 import { breakpoints } from '../utilities/constants'
 
 export default function Container() {
   return (
-    <Fragment>
+    <StyledWrapper>
       <main>
         <p>
           <span>
@@ -23,13 +23,13 @@ export default function Container() {
 
       <aside>
         <ProductDetails />
-        <ProductChoices />
+        <ProductSelection />
       </aside>
-    </Fragment>
+    </StyledWrapper>
   )
 }
 
-const Fragment = styled.div`
+const StyledWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px 0;

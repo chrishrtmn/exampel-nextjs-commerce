@@ -1,24 +1,25 @@
 import styled from 'styled-components'
+import { products } from '../utilities/constants'
 
 export default function ProductImage() {
-  return (
-    <Images>
-      <img src='images/products/sofa-amber.jpg' alt='' />
-      <img src='images/products/sofa-charcoal.jpg' alt='' hidden />
-      <img src='images/products/sofa-red.jpg' alt='' hidden />
-    </Images>
-  )
+  const images = products.map((product) => (
+    <img src={`images/products/${product.filename}.jpg`} alt='' />
+  ))
+
+  return <StyledWrapper>{images}</StyledWrapper>
 }
 
-const Images = styled.div`
+const StyledWrapper = styled.div`
   margin: 40px 0 0;
 
   img {
     max-width: none;
     width: 100%;
-  }
 
-  img[hidden] {
-    display: none !important;
+    &[hidden] {
+      display: none;
+    }
   }
 `
+
+// if the product.filename === active from ProductThumbs, then set [hidden] on other img's

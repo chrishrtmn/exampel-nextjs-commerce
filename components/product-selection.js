@@ -1,9 +1,27 @@
+import { useState } from 'react'
 import styled from 'styled-components'
-import { breakpoints } from '../utilities/constants'
+import { breakpoints, products } from '../utilities/constants'
 
-export default function ProductChoices() {
+export default function ProductSelection() {
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  const handleOnClick = (index) => {
+    setActiveIndex(index)
+  }
+
+  const ProductThumbs = products.map((product, index) => (
+    <div
+      key={index}
+      onClick={() => handleOnClick(index)}
+      className={activeIndex === index ? 'active' : ''}
+    >
+      <img src={`images/products/${product.filename}-thumb.jpg`} alt='' />
+      <span>{product.color}</span>
+    </div>
+  ))
+
   return (
-    <Fragment>
+    <StyledWrapper>
       <Title>
         <h3>1. Choose a fabric</h3>
         <p>Choose your choice from fabrics to leather.</p>
@@ -11,25 +29,12 @@ export default function ProductChoices() {
 
       <h4>Fabric Choices</h4>
 
-      <Thumbnails>
-        <div className='active'>
-          <img src='images/products/sofa-amber-thumb.jpg' alt='' />
-          <span>Amber</span>
-        </div>
-        <div>
-          <img src='images/products/sofa-charcoal-thumb.jpg' alt='' />
-          <span>Charcoal</span>
-        </div>
-        <div>
-          <img src='images/products/sofa-red-thumb.jpg' alt='' />
-          <span>Red</span>
-        </div>
-      </Thumbnails>
-    </Fragment>
+      <Selection>{ProductThumbs}</Selection>
+    </StyledWrapper>
   )
 }
 
-const Fragment = styled.div`
+const StyledWrapper = styled.div`
   padding: 25px 0;
   border-top: 2px solid #fff;
 
@@ -48,7 +53,7 @@ const Title = styled.div`
   }
 `
 
-const Thumbnails = styled.div`
+const Selection = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
