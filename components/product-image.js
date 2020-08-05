@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+/*import styled from 'styled-components'
 import { products } from '../utilities/constants'
 
 export default function ProductImage() {
@@ -21,5 +21,4 @@ const StyledWrapper = styled.div`
     }
   }
 `
-
-// if the product.filename === active from ProductThumbs, then set [hidden] on other img's
+*/

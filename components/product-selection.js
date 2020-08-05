@@ -1,6 +1,6 @@
-import { useState } from 'react'
+/*import { useState } from 'react'
 import styled from 'styled-components'
-import { breakpoints, products } from '../utilities/constants'
+import { breakpoints } from '../utilities/constants'
 
 export default function ProductSelection() {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -107,3 +107,4 @@ const Selection = styled.div`
     }
   }
 `
+*/
